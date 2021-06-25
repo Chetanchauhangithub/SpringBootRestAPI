@@ -1,6 +1,7 @@
 package com.springrestapi.springrestapi.services;
 
-public class Employee {
+public interface EmployeeService {
 
-	String Name;
+
+	
 }
