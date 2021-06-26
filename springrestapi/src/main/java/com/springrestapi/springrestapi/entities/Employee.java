@@ -7,7 +7,7 @@ public class Employee {
 	private long salary;
 	public Employee() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Employee(long id, String name, long salary) {
 		super();

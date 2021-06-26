@@ -12,10 +12,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
 	
 	List<Employee> list;
-	
-	
-	
-	
+		
 	public EmployeeServiceImpl() {
 		
 		
@@ -32,6 +29,32 @@ public class EmployeeServiceImpl implements EmployeeService{
 	public List<Employee> getEmployee() {
 		
 		return list;
+	}
+
+
+
+
+	@Override
+	public Employee getEmployeeById(long Id){
+		
+		Employee e = null;
+		
+		for(Employee emp : list) {
+			
+			if(emp.getId()==Id) {
+				e=emp;
+				break;
+			}
+		}
+		return e;
+	}
+	
+	public Employee addEmployee(Employee employee) {
+		
+		list.add(employee);
+		
+		return employee;
+		
 	}
 
 }
